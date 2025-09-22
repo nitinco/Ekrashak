@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-krashak</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FarmAdda</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;1,300&display=swap">
+<script src="https://kit.fontawesome.com/daa4373d70.js" crossorigin="anonymous"></script>
+
+
+
+
+
+<style>
+  body {
+    background-image: url(./Background\ 5.jpg);
+  }
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+nav {
+    width: 100%;
+    display: flex;
+    padding: 0%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    
+    flex: 1;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    padding: 10px 0px; /* Add padding for spacing */
+  
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white; /* Change text color to white for better visibility on black */
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ca340e;
+    display: block;
+    margin: auto;
+    transition: 0.25s;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 250%;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    color: #fff;
+    font-size: 25px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    width: 50%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #180601;
+    background-color: #e3dddb;
+    color: black;
+    transition: 1%;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 100%;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        background-color: #ca340e;
+        background: linear-gradient(rgb(103, 223, 133));
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+  }
+
+</style>
+</head>
+
+
+<body class="w3-light-grey">
+
+  <section class="header">
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-xmark" onclick="hidemenu()"></i>
+            <ul>
+                <li> <a href="./index.html">HOME</a> </li>
+                
+                <li> <a href="./services.html">SERVICES</a> </li>
+                <!-- <li> <a href="blog.html">BLOG</a> </li> -->
+               
+                <li> <a href="./fpo.html">FPO COMPLIANCES</a> </li>
+                <li> <a href="./Tranning.html">TRANNING</a> </li>
+                <li> <a href="./Govt_schmes.html">GOVT. SCHEMES</a> </li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+
+
+</section>
+
+
+
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>FPO COMPLIANCES</b></h1>
+  <h4>Annual Compliances of Farmer Producer Company</h4>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="./images/p2.png" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b></b></h3>
+    </div>
+
+    <div class="w3-container">
+      <p>
+
+        <h5>1. Incorporation Compliance</h5>
+<p>• Registration: An FPO must be registered as a Producer Company under Section 465(1) of the Companies Act, 2013. This involves submitting the necessary documents, including the Memorandum of Association (MoA) and Articles of Association (AoA), to the Registrar of Companies (RoC).</p>
+<p>• Minimum Membership: An FPO must have at least 10 individual producers or 2 producer institutions as members.</p>
+
+<h5>2. Annual General Meeting (AGM)</h5>
+<p>• Requirement: FPOs must conduct an Annual General Meeting every financial year. The first AGM should be held within 9 months from the date of incorporation, and subsequent AGMs should be held within 6 months from the end of the financial year, but not later than 15 months from the last AGM.</p>
+<p>• Agenda: The AGM typically includes approval of financial statements, appointment of directors, and other essential business matters.</p>
+
+<h5>3. Board Meetings</h5>
+<p>• Frequency: The Board of Directors must meet at least once every three months, holding a minimum of four meetings each financial year.</p>
+<p>• Minutes: Proper minutes of all board meetings must be recorded and maintained.</p>
+
+<h5>4. Statutory Audits</h5>
+<p>• Audit of Accounts: FPOs must have their financial accounts audited annually by a qualified Chartered Accountant. The audited financial statements must be approved by the Board of Directors before they are presented at the AGM.</p>
+<p>• Filing of Financial Statements: The audited financial statements, along with the Director’s Report and Auditor’s Report, must be filed with the Registrar of Companies within 30 days of the AGM using Form AOC-4.</p>
+
+<h5>5. Filing of Annual Returns</h5>
+<p>• Form MGT-7: FPOs are required to file their annual return in Form MGT-7 within 60 days of holding the AGM. This return includes details about the shareholders, directors, and other key information about the FPO.</p>
+
+<h5>6. Director Identification Number (DIN)</h5>
+<p>• DIN Requirement: Every director of an FPO must obtain a Director Identification Number (DIN) from the Ministry of Corporate Affairs (MCA). This unique number is mandatory for all correspondence with the MCA.</p>
+
+<h5>7. Appointment of Directors</h5>
+<p>• Minimum and Maximum Directors: An FPO must have a minimum of 5 and a maximum of 15 directors on its Board. Directors are typically elected by the members in the AGM.</p>
+<p>• Tenure: Directors usually serve a term as specified in the AoA and can be re-elected by the members.</p>
+
+<h5>8. Compliance with Producer Company Provisions</h5>
+<p>• Producer Company Specifics: As per the Companies Act, 2013, FPOs registered as Producer Companies have specific provisions, such as issuing only equity shares to members, and ensuring that only producers can be members.</p>
+<p>• Voting Rights: Voting rights are based on the number of shares held by a member, as per the one-member, one-vote principle, irrespective of shareholding.</p>
+
+<h5>9. Maintenance of Statutory Registers</h5>
+<p>• Registers Required: FPOs must maintain several statutory registers, including the Register of Members, Register of Directors and Key Managerial Personnel, Register of Charges, and Register of Contracts, among others.</p>
+
+<h5>10. Taxation Compliance</h5>
+<p>• Income Tax Filing: FPOs must file their income tax returns annually, even if they are eligible for certain tax exemptions under Section 80P of the Income Tax Act, 1961, provided they meet the eligibility criteria.</p>
+
+<h5>11. Other Compliances</h5>
+<p>• Changes in Registered Office: Any change in the registered office of the FPO must be reported to the Registrar of Companies using the appropriate forms within 15 days of the change.</p>
+<p>• Share Capital Compliance: Any increase or decrease in share capital must be approved by the members in a general meeting and reported to the RoC.</p>
+
+<h5>12. Compliance with Government Schemes</h5>
+<p>• Scheme-Specific Requirements: If an FPO is availing benefits from government schemes, it must comply with the specific reporting and operational requirements of those schemes.</p>
+
+
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+         
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="./images/p3.png" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Consequences of Non-Compliance</b></h4>
+      <p> 
+
+        <h5>1. Payment of Additional Filing Fees</h5>
+<p>In case a company fails to file forms on or before the due date, it has to pay additional filing fees to the ROC. For example, if AOC-4 or MGT-7 are not filed on time, then a company has to pay additional fees of Rs. 100 per day.</p>
+
+<h5>2. Penalty on Company and its Officers</h5>
+<p>In case of default in annual compliance, a penalty is also levied on the company and the officers who are in default.</p>
+
+<h5>3. Disqualification of Directors</h5>
+<p>If a company fails to file its financial statements (AOC-4) or annual return (MGT-7) for a continuous period of 3 financial years, then its directors become disqualified. They can neither be reappointed in the same company nor be appointed in another company for 5 years after such failure.</p>
+
+<h5>4. Inactive Company</h5>
+<p>If the company remains inactive, its name is stricken off from the register of companies after a notice is served.</p>
+
+      </p>
+    </div>
+  </div><hr>
+
+  <div class="w3-card w3-margin w3-margin-top">
+    <img src="./images/p4.png" style="width:100%">
+      <div class="w3-container w3-white">
+       
+      </div>
+  
+  
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+
+
+</body>
+</html>

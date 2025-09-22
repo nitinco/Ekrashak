@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmAdda</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;1,300&display=swap">
+    <script src="https://kit.fontawesome.com/daa4373d70.js" crossorigin="anonymous"></script>
+    <title>Card Layout</title>
+    <style>
+
+
+
+
+nav {
+    width: 100%;
+    display: flex;
+    padding: 0%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    
+    flex: 1;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    padding: 10px 0px; /* Add padding for spacing */
+  
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white; /* Change text color to white for better visibility on black */
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ca340e;
+    display: block;
+    margin: auto;
+    transition: 0.25s;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 250%;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    color: #fff;
+    font-size: 25px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    width: 50%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #180601;
+    background-color: #e3dddb;
+    color: black;
+    transition: 1%;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 100%;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        background-color: #ca340e;
+        background: linear-gradient(rgb(103, 223, 133));
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('./Background\ 5.jpg'); /* Add this line */
+            background-size: cover; /* Ensures the background covers the whole page */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 60%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        /* Card 2: Image on the left, content on the right */
+        .card:nth-child(2) .card-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card:nth-child(2) .card-content img {
+            width: 60%;
+        }
+
+        .card:nth-child(2) .card-content div {
+            width: 40%;
+            padding-left: 15px;
+            text-align: left;
+        }
+
+        /* Card 3: Image on the right, content on the left */
+        .card:nth-child(3) .card-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .card:nth-child(3) .card-content img {
+            width: 60%;
+            order: 2;
+        }
+
+        .card:nth-child(3) .card-content div {
+            width: 40%;
+            padding-right: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .card:nth-child(2) .card-content,
+            .card:nth-child(3) .card-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card:nth-child(2) .card-content img,
+            .card:nth-child(2) .card-content div,
+            .card:nth-child(3) .card-content img,
+            .card:nth-child(3) .card-content div {
+                width: 100%;
+                padding: 0;
+            }
+
+            .card:nth-child(2) .card-content div,
+            .card:nth-child(3) .card-content div {
+                padding-top: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li> <a href="./index.html">HOME</a> </li>
+                    
+                   
+                    <li> <a href="./services.html">SERVICES</a> </li>
+                    <!-- <li> <a href="blog.html">BLOG</a> </li> -->
+                   
+                    <li> <a href="./fpo.html">FPO COMPLIANCES</a> </li>
+                    <li> <a href="./Tranning.html">TRANNING</a> </li>
+                    <li> <a href="./Govt_schmes.html">GOVT. SCHEMES</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+
+    </section>
+
+
+
+
+
+
+
+
+<div class="container">
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="./images/T1.jpg" alt="Image 1">
+        <div class="card-content">
+            <h2>Skill Training to Farmers in the Agriculture Sector</h2>
+            <p>
+                Skill training for farmers is a crucial component in enhancing agricultural productivity and sustainability. <br>
+                In the agriculture sector, farmers often rely on traditional methods that may not be as effective in today's dynamic environment. <br> 
+                Providing them with modern skill training equips them with the knowledge and techniques needed to improve crop yields, <br>
+                manage resources more efficiently, and adapt to changing climate conditions.
+            </p>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <div class="card-content">
+            <img src="./images/T2.jpg" alt="Image 2">
+            <div>
+                <h2>Key Areas of Training</h2>
+                <h4>1. Modern Farming Techniques</h4>
+                <p>Farmers are trained in the use of advanced technologies like precision farming, drip irrigation, and integrated pest management. These techniques help in optimizing resource use and reducing environmental impact.</p>
+            
+                <h4>2. Sustainable Practices</h4>
+                <p>Training programs focus on sustainable agricultural practices such as organic farming, crop rotation, and soil conservation. These methods help maintain soil fertility and ensure long-term productivity.</p>
+            
+                <h4>3. Market Access and Value Addition</h4>
+                <p>Farmers are educated on market dynamics, including demand forecasting and price trends. They also learn about value addition processes, like packaging and branding, which can significantly increase their income.</p>
+            
+                <h4>4. Financial Literacy</h4>
+                <p>Understanding financial management is essential for farmers to manage loans, savings, and investments. Training in this area helps them make informed decisions and ensures the financial sustainability of their farming operations.</p>
+            
+                <h4>5. Climate Resilience</h4>
+                <p>As climate change poses a significant threat to agriculture, farmers are trained on practices that enhance resilience, such as drought-resistant crops, water management, and diversification of crops.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <div class="card-content">
+            <div>
+                <h3>Capacity Building of Board of Directors of Farmer Producer Organizations (FPOs)</h3>
+                <p>Farmer Producer Organizations (FPOs) play a critical role in empowering small and marginal farmers by providing them with collective bargaining power and better access to markets. However, the effectiveness of FPOs largely depends on the capacity and competence of their Board of Directors (BoD). Capacity building of the BoD is essential to ensure good governance, strategic planning, and sustainable growth of FPOs.</p>
+                
+                <h4>Key Components of Capacity Building:</h4>
+                <h4>1. Governance and Leadership</h4>
+                <p>Training programs focus on enhancing the leadership qualities of the BoD members, ensuring they understand their roles and responsibilities. This includes fostering transparency, accountability, and democratic decision-making within the FPO.</p>
+
+                <h4>2. Strategic Planning</h4>
+                <p>The BoD is trained in strategic planning to align the FPO's activities with long-term goals. This includes market analysis, financial planning, and resource allocation to ensure the FPO's growth and sustainability.</p>
+
+                <h4>3. Financial Management</h4>
+                <p>Board members are provided with financial management training, covering areas such as budgeting, financial reporting, and audit compliance. This helps in maintaining financial health and ensuring the FPO's operations are economically viable.</p>
+
+                <h4>4. Legal and Regulatory Compliance</h4>
+                <p>Understanding the legal framework within which FPOs operate is critical. Training includes familiarization with relevant laws, regulations, and policies to ensure the FPO remains compliant and can take advantage of government schemes.</p>
+
+                <h4>5. Member Engagement and Communication</h4>
+                <p>The BoD is trained in effective communication and member engagement strategies to build trust and ensure that the needs and concerns of the farmer members are addressed. This also involves capacity building in conflict resolution and consensus-building.</p>
+
+                <h4>6. Business Development</h4>
+                <p>Training in business development helps the BoD identify new opportunities for growth, such as diversification into processing, branding, and marketing. This ensures that the FPO remains competitive and can offer better returns to its members.</p>
+            </div>
+            <img src="./images/T3.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+        <img src="./images/T4.jpg" alt="Image 4">
+        <div class="card-content">
+            <h5>In conclusion, skill training for farmers and capacity building for the BoD of FPOs are essential strategies for enhancing the agricultural sector's productivity and sustainability. <br>
+                By empowering individuals at both the grassroots and leadership levels, <br>
+                these initiatives contribute to the overall development of the farming community and the agricultural economy.</h5>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
